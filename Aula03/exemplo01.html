@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Formulário - Exemplos</title>
+</head>
+
+<body>
+
+    <!-- Inicia/Abre o formulário -->
+    <form method="GET">
+
+        <h1>Input type="text"</h1>
+        <input type="text" name="primeiroNome" id="primeiroNome" />
+
+        <hr>
+
+        <h1>Uso de label</h1>
+        <label for="primeiroNome2">Primeiro Nome</label>
+        <input type="text" name="primeiroNome2" id="primeiroNome2" />
+
+        <hr>
+
+        <h1>Uso de placeholder</h1>
+        <label for="email">Email</label>
+        <input type="text" name="email" id="email" placeholder="email@dominio.com" />
+
+        <hr>
+
+        <h1>Input type="password"</h1>
+        <input type="password" name="senha" />
+
+        <hr>
+
+        <h1>Input type="radio"</h1>
+        <label for="ser_humano">Ser Humano</label>
+        <input type="radio" value="ser_humano" id="ser_humano" name="tipo_de_ser" />
+        <label for="alienigena">Alienígena</label>
+        <input type="radio" value="alienigena" id="alienigena" name="tipo_de_ser" />
+
+        <hr>
+
+        <h1>Input type="checkbox"</h1>
+        <label for="ser_humano2">Ser Humano</label>
+        <input type="checkbox" value="ser_humano2" id="ser_humano2" name="tipo_de_ser" />
+        <label for="alienigena2">Alienígena</label>
+        <input type="checkbox" value="alienigena2" id="alienigena2" name="tipo_de_ser" />
+
+        <hr>
+
+        <h1>Elemento select</h1>
+        <label for="filmes">Selecione um filme</label>
+        <select name="filmes" id="filmes">
+            <option value="ion_man">Iron Man</option>
+            <option value="deadpool" selected>Deadpool</option>
+            <option value="guardioes_da_galaxia">Guardiões da Galáxia</option>
+            <option value="thor">Thor Ragnarok</option>
+        </select>
+
+        <hr>
+
+        <h1>Elemento datalist</h1>
+        <label for="inputBrowser">Selecione um browser</label>
+        <input list="browsers" id="inputBrowser">
+        <datalist id="browsers">
+            <option value="Internet Explorer">
+            <option value="Firefox">
+            <option value="Chrome">
+            <option value="Opera">
+            <option value="Safari">
+        </datalist>
+
+        <hr>
+
+        <h1>Elemento textarea</h1>
+        <textarea name="message" cols="30" rows="10"></textarea>
+
+        <hr>
+
+        <h1>Input type="button"</h1>
+        <input type="button" onclick="alert('Clicou!!')" value="Clique aqui">
+
+        <hr>
+
+        <h1>Elemento button</h1>
+        <button onclick="alert('Clicou! TOP!')">Clique Aqui</button>
+
+        <hr>
+
+        <h1>Input type="submit"</h1>
+        <input type="submit" value="Enviar"/> 
+
+        <hr>
+
+        <h1>Input type="reset"</h1>
+        <input type="reset" value="Limpar Campos"/> 
+
+        <hr>
+
+
+
+        <!-- Finaliza/Fecha o formulário -->
+    </form>
+
+</body>
+
+</html>
