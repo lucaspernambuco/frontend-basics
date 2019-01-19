@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Aula de CSS</title>
+
+	<style>
+		body {
+			background-color: #8A7EBE;
+		}
+
+		h1 {
+			color: #FFF;
+		}
+		#h1-especial{
+			color: red;
+		}
+		.grupo-h1{
+			color: yellow;
+		}
+		 span{
+			 background-color: gray;
+		 }
+		 .borda-legal{
+			 border: 1px solid black;
+		 }
+		 .span-especial{
+			 background-color: red;
+		 }
+
+		div{
+			height: 100px;
+			width: 100px;
+			background-color: red;
+			border: 1px dashed black;
+			border-radius: 10px;
+		}
+
+		h1 > p {
+			color: purple;
+		}
+
+		h1 + p {
+			background-color: #FFF;
+		}
+
+	</style>
+
+</head>
+
+<body>
+	<h1 class="grupo-h1 borda-legal">
+		Olá Mundo! - Exemplo 01
+		<p>Paragrafo dentro do h1</p>
+	</h1>
+	<p>Paragrafo 01</p>
+	<h1 id="h1-especial">Olá Mundo! - <span>Exemplo 02</span></h1>
+	<h1>Olá Mundo! - Exemplo 03</h1>
+	<p>Paragrafo 01</p>
+	<h1 class="grupo-h1">Olá Mundo! - <span class="borda-legal span-especial">Exemplo 04</span></h1>
+	<h1 class="grupo-h1">Olá Mundo! - Exemplo 05</h1>
+	<span>Span legal</span>
+	<p>Paragrafo 02</p>
+
+	<div></div>
+
+</body>
+
+</html>
