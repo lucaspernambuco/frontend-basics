@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Gradient - Aula07</title>
+
+	<style>
+		.box {
+			width: 100px;
+			height: 100px;
+			background-color: tomato;
+		}
+
+		.box1:hover {
+			width: 200px;
+			background-color: green;
+			transition-delay: .2s;
+			transition-duration: 1s;
+			transition-property: width;
+			transition-timing-function: linear;
+		}
+
+		.box2:hover {
+			width: 200px;
+			height: 200px;
+			background-color: red;
+			transition-delay: 2s;
+			transition-duration: 1s;
+			transition-property: all;
+			transition-timing-function: ease;
+		}
+
+		.box3:hover {
+			width: 200px;
+			transition-delay: .2s;
+			transition-duration: 1s;
+			transition-property: width;
+			transition-timing-function: ease-in;
+		}
+
+		.box4:hover {
+			width: 200px;
+			transition-delay: .2s;
+			transition-duration: 1s;
+			transition-property: width;
+			transition-timing-function: ease-out;
+		}
+
+		.box5:hover {
+			width: 200px;
+			transition-delay: .2s;
+			transition-duration: 1s;
+			transition-property: width;
+			transition-timing-function: ease-in-out;
+		}
+	</style>
+
+</head>
+
+<body>
+
+	<h1>Transition: linear</h1>
+	<div class="box box1"></div>
+	<hr>
+
+	<h1>Transition: ease</h1>
+	<div class="box box2"></div>
+	<hr>
+
+	<h1>Transition: ease-in</h1>
+	<div class="box box3"></div>
+	<hr>
+
+	<h1>Transition: ease-out</h1>
+	<div class="box box4"></div>
+	<hr>
+
+	<h1>Transition: ease-in-out</h1>
+	<div class="box box5"></div>
+	<hr>
+
+</body>
+
+</html>
