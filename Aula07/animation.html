@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Gradient - Aula07</title>
+
+	<style>
+		.box {
+			width: 200px;
+			height: 200px;
+			background-color: tomato;
+		}
+
+		.box1:hover {
+			animation: animacaobolada 4s linear 1s infinite alternate;
+		}
+
+		@keyframes animacaobolada2{
+			from{
+				margin-left: 0;
+			}
+			to{
+				margin-left: 500px
+			}
+		}
+
+		.box2:hover {
+			/*animation: animacaobolada2 2s linear 1s infinite alternate;*/
+			animation-name: animacaobolada2;
+			 animation-duration: 2s;
+			 animation-timing-function: ease-out;
+			 animation-delay: 1s;
+			 animation-direction: alternate;
+			 animation-iteration-count: infinite;
+		}
+
+		@keyframes animacaobolada {
+			0% {
+				background-color: red;
+				width: 300px;
+			}
+			50% {
+				background-color: blue;
+				width: 100px;
+			}
+			100% {
+				background-color: green;
+				width: 500px;
+			}
+		}
+	</style>
+
+</head>
+
+<body>
+
+	<h1>%</h1>
+	<div class="box box1"></div>
+
+	<hr>
+
+	<h1>to from</h1>
+	<div class="box box2"></div>
+
+	<hr>
+
+</body>
+
+</html>
