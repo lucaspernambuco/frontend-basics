@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Box-shadow - Aula06</title>
+
+	<style>
+		.container-pai {
+			width: 500px;
+			height: 400px;
+			background-color: blue;
+			margin: 50px 0;
+		}
+
+		.container-filho {
+			width: 100px;
+			height: 100px;
+			background-color: yellow;
+		}
+
+		.container-pai1 {
+			background: red;
+			
+		}
+
+		.container-filho1 {
+			background: green;
+			position: static;
+			left: 50px;
+		}
+
+		.container-pai2 {
+			background: green;
+		}
+
+		.container-filho2 {
+			background: red;
+			position: fixed;
+		}
+
+		.container-pai3 {
+			background: pink;
+			 position: relative;
+		}
+
+		.container-filho3 {
+			background-color: yellow;
+			 position: absolute; 
+			 top: 20px; left: 20px;
+		}
+
+		.container-pai4 {
+			background-color: yellow;
+		}
+
+		.container-filho4 {
+			background: pink;
+			 position: relative;
+			 top: 30px;
+			 left: 50px;
+		}
+	</style>
+
+</head>
+
+<body>
+
+	<div class="container-pai container-pai1">
+		<div class="container-filho container-filho1">
+			static
+		</div>
+	</div>
+	<div class="container-pai container-pai2">
+		<div class="container-filho container-filho2">
+			Fixed
+		</div>
+	</div>
+
+	<div class="container-pai container-pai3">
+		<div class="container-filho container-filho3">
+			absolute
+		</div>
+	</div>
+
+	<div class="container-pai container-pai4">
+		<div class="container-filho container-filho4">
+			relative
+		</div>
+	</div>
+
+</body>
+
+</html>
